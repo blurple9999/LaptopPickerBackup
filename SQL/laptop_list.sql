@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Oct 03, 2022 at 04:49 PM
+-- Generation Time: Oct 04, 2022 at 10:10 PM
 -- Server version: 10.5.16-MariaDB
 -- PHP Version: 7.3.32
 
@@ -65,7 +65,14 @@ INSERT INTO `laptop_list` (`Laptop`, `Price`, `Manufacturer`, `OS`, `CPU Series`
 ('Asus Vivobook Flip 14 TM420IA-DB71T', 739, 'Asus', 'Windows 10', 'AMD Ryzen 7', '4700U', 'AMD Radeon Vega 7', 14, '1920 x 1080', 60, '16:9', 'Yes', 8, 512, 'No', 'Yes', 'No', 2, 1, 42, 3.31),
 ('Acer Aspire 5 Slim', 359, 'Acer', 'Windows 10', 'AMD Ryzen 3', '3200U', 'AMD Radeon Vega 3', 15.6, '1920 x 1080', 60, '16:9', 'No', 4, 128, 'No', 'No', 'Yes', 2, 1, 48, 3.97),
 ('Lenovo Flex 5i', 1059.99, 'Lenovo', 'Windows 11', 'Intel Core i7', '1255U', 'Intel Iris Xe', 14, '1920 x 1200', 60, '16:10', 'Yes', 8, 512, 'Yes', 'Yes', 'Yes', 2, 1, 52.5, 3.3),
-('HP Spectre x360 Convertible', 1369, 'HP', 'Windows 11', 'Intel Core i7', '11390H', 'Intel Iris Xe', 16, '3000 x 2000', 60, '3:2', 'Yes', 16, 512, 'Yes', 'Yes', 'Yes', 1, 4, 41.9, 4.45);
+('HP Spectre x360 Convertible', 1369, 'HP', 'Windows 11', 'Intel Core i7', '11390H', 'Intel Iris Xe', 16, '3000 x 2000', 60, '3:2', 'Yes', 16, 512, 'Yes', 'Yes', 'Yes', 1, 4, 41.9, 4.45),
+('HP Pavilion Laptop - 15t-eg000', 499, 'HP', 'Windows 11', 'Intel Core i5', '113G7', 'Intel Iris', 15.6, '1366 x 786', 60, '16:9', 'Yes', 16, 512, 'No', 'No', 'No', 2, 1, 41, 3.41),
+('XPS 13 2-in-1', 1099, 'Dell', 'Windows 11', 'Intel Core i5', '1230U', 'Intel Iris', 13, '2880 x 1920', 60, '3:2', 'Yes', 8, 512, 'No', 'No', 'No', 0, 4, 49.5, 1.23),
+('Galaxy Book2 Pro', 1299.99, 'Samsung', 'Windows 11', 'Intel Core i7', '1260P', 'Intel Iris', 13, '1920 x 1080', 60, '16:9', 'Yes', 8, 512, 'Yes', 'No', 'No', 1, 1, 68, 1.92),
+('XPS 15', 2349, 'Dell', 'Windows 11', 'Intel Core i9', '1290HK', 'NVIDIA RTX 3050', 15.6, '1920 x 1200', 60, '16:10', 'Yes', 16, 512, 'Yes', 'No', 'No', 0, 2, 86, 4.62),
+('Microsoft - Surface Book 2', 849, 'Microsoft', 'Windows 10', 'Intel Core i7', '8650U', 'NVIDIA GTX 1600', 15, '3240 x 2160', 60, '3:2', 'Yes', 16, 256, 'No', 'Yes', 'No', 0, 1, 68, 4.2),
+('Vostro 5620', 929, 'Dell', 'Windows 11', 'Intel Core i7', '1260P', 'Intel Iris', 16, '1920 x 1200', 60, '16:10', 'Yes', 16, 512, 'Yes', 'No', 'Yes', 1, 2, 54, 4.21),
+('HP Pavillion 15', 780.99, 'HP', 'Windows 11', 'Intel Core i7', '1255U', 'Intel Iris Xe', 15.6, '1920 x 1080', 60, '16.9', 'No', 16, 512, 'Yes', 'No', 'No', 2, 1, 63, 3.86);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
