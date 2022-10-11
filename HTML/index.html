@@ -1,3 +1,7 @@
+<?php
+	include("filter.php");
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -293,6 +297,16 @@
                             </form>
 
                         </aside><!-- /.sidebar -->
+                        <table width=75% height=100px>
+							<tr>
+								<th>Laptop</th>
+								<th>CPU</th>
+								<th>Price</th>
+							</tr>
+							<?php
+								create_task_table1();
+							?>
+						</table>
                     </div>
 
                     <!-- /.col-lg-3 -->
