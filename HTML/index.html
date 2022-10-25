@@ -26,27 +26,30 @@
     <!-- =========================
         Header
     =========================== -->
-        <header class="header header-transparent header-layout1 bg-dark">
+    <header class="header header-transparent header-layout1 bg-dark">
 
-            <nav class="navbar navbar-expand-lg sticky-navbar">
-                <div class="container">
-                    <a class="navbar-brand" href="{{ url('/') }}">
-                    </a>
-                    <button class="navbar-toggler" type="button">
-                        <span class="menu-lines"><span></span></span>
-                    </button>
+        <nav class="navbar navbar-expand-lg sticky-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="asset/images/logo/logo.png" class="logo-light" height="80px">
+                </a>
+                <button class="navbar-toggler" type="button">
+                    <span class="menu-lines"><span></span></span>
+                </button>
 
-                    <div class="collapse navbar-collapse" id="mainNavigation">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav__item"><a href="#" class="nav__item-link text-light">Laptop</a></li>
-                        
-                        </ul>
-                    </div>
+                <div class="collapse navbar-collapse" id="mainNavigation">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav__item"><a href="index.html" class="nav__item-link text-light">Home</a></li>
+                        <li class="nav__item"><a href="#" class="nav__item-link text-light">About</a></li>
+                        <li class="nav__item"><a href="#" class="nav__item-link text-light">Contact</a></li>
+                        <li class="nav__item"><a href="#" class="nav__item-link text-light">History</a></li>
+                    </ul>
+                </div>
+            </div><!-- /.container -->
 
-                </div><!-- /.container -->
-            </nav><!-- /.navabr -->
+        </nav><!-- /.navabr -->
 
-        </header><!-- /.Header -->
+    </header><!-- /.Header -->
 
 
         <!-- ========================
@@ -65,9 +68,9 @@
                                 <div class="widget widget-filter">
                                     <h5 class="widget__title">Price Range</h5>
                                     <div id="slider-range" data-min="1"
-                                        data-max="10000"
+                                        data-max="5000"
                                         class="slider-range-price ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"
-                                        data-value-min="1" data-value-max="10000" data-label-result="Price:">
+                                        data-value-min="1" data-value-max="5000" data-label-result="Price:">
                                         <div class="ui-slider-range ui-widget-header ui-corner-all"></div>
                                         <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span>
                                         <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span>
@@ -76,7 +79,7 @@
                                         <input type="hidden" id="price_range" value="" name="price_range">
                                         <label for="">Price:</label>
                                         <input style="border: 0" type="text" readonly id="amount"
-                                            value=" $1 - $10000">
+                                            value=" $1 - $5000">
                                     </div>
 
                                 </div>
@@ -299,10 +302,15 @@
                         </aside><!-- /.sidebar -->
                         <table width=75% height=100px>
 							<tr>
-								<th>Laptop</th>
+								<th>Laptop </th>
 								<th>CPU</th>
 								<th>Price</th>
 							</tr>
+                            <tr>
+                                <td>Laptop 1</td>
+                                <td>Core i7</td>
+                                <td>L</td>
+                              </tr>
 							<?php
 								create_task_table1();
 							?>
@@ -323,15 +331,78 @@
             </div><!-- /.container -->
         </section><!-- /.shop -->
             
-        <!-- ========================
+         <!-- ========================
         Footer
         ========================== -->
-        <footer class="footer bg-dark">
+        <footer class="footer footer-layout1 text-center bg-dark">
+
 
             <div class="footer-top">
-            </div><!-- /.Footer-bottom -->
+
+                <div class="container">
+                    <div class="row align-items-center">
+
+                        <div class=" col-sm-12 col-md-12 col-lg-4">
+                            <div class="contact-box">
+                                <h6 class="contact__box-title text-white">Our Address</h6>
+                                <ul class="contact__box-list list-unstyled">
+                                    <li>Wayne State University <br> USA</li>
+
+                                </ul>
+
+                            </div><!-- /.contact-box -->
+
+                        </div><!-- /.col-lg-4 -->
+                        <div class="col-sm-12 col-md-12 col-lg-4">
+
+                            <img src="asset/images/logo/logo.png" alt="logo"
+                                class="footer__logo mb-20" height="88px" width="126px"><br><br>
+
+
+                            <p class="mx-2 mb-20">LaptopPicker is a platform for finding best suitable laptop for users.</p>
+
+                            <ul class="social__icons social__icons-white justify-content-center">
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+
+
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            </ul><!-- /.social__icons -->
+
+                        </div><!-- /.col-lg-4 -->
+                        <div class="col-sm-12 col-md-12 col-lg-4">
+
+                            <div class="contact-box">
+                                <h6 class="contact__box-title text-white">Our Info</h6>
+    
+                                <ul class="contact__box-list list-unstyled">
+                                    <li><span>Main Email:</span> <a href="mailto:laptoppicker@gmail.com">laptoppicker@gmail.com</a></li>
+                                    <li><span>Phone:</span> <a href="tel:+1(313) 327-9911">+1(313) 327-9911</a></li>
+                                </ul>
+
+
+                            </div><!-- /.contact-box -->
+                        </div><!-- /.col-lg-4 -->
+                    </div><!-- /.row -->
+
+                </div><!-- /.container -->
+
+            </div><!-- /.footer-top -->
 
         </footer><!-- /.Footer -->
+    </div><!-- /.wrapper -->
+
+    <script src="asset/js/jquery-3.3.1.min.js"></script>
+
+    <script src="asset/js/plugins.js"></script>
+
+    <script src="asset/js/main.js"></script>
+
+</body>
+
+
+</html>
 
     </div><!-- /.wrapper -->
 
@@ -367,7 +438,7 @@
             }
         });
 
-
+        
     
     </script>
 
