@@ -58,10 +58,10 @@ CREATE TABLE `laptop_list` (
 
 INSERT INTO `laptop_list` (`Laptop`, `Price`, `Manufacturer`, `OS`, `CPU Series`, `CPU`, `GPU`, `Size`, `Resolution`, `Refresh Rate`, `Aspect Ratio`, `Touchscreen`, `RAM Size (GB)`, `Storage Size (GB)`, `Thunderbolt`, `Micro SD`, `RJ45`, `USB-A Slots`, `USB-C Slots`, `Battery Capacity`, `Weight`) VALUES
 ('Aspire 1 Laptop - A115-32-C7ZW', 249.99, 'Acer', 'Windows 11', 'Intel Celron', 'N4000', 'Intel UHD', 15.6, '1920 x 1080', 60, '16:9', 'Yes', 4, 64, 'No', 'No', 'Yes', 3, 0, 49, 3.64),
-('Samsung Galaxy Book Pro 15', 993, 'Samsung', 'Windows 10', 'Intel i7', '1165G7', 'Intel Iris', 15.6, '1920 x 1080', 60, '16:9', 'No', 16, 512, 'Yes', 'Yes', 'No', 1, 1, 68, 2.36),
-('Yogi 9i', 1124.99, 'Lenovo', 'Windows 11', 'Inteli7', '1185G7', 'Intel Iris', 14, '1920 x 1080', 60, '16:9', 'Yes', 8, 512, 'Yes', 'No', 'No', 1, 2, 60, 3),
-('Alienware x14', 1499.99, 'Dell', 'Windows 11', 'Inteli5', '12500H', 'Nvidia RTX 3050', 14, '1920 x 1080', 144, '16:9', 'No', 16, 512, 'Yes', 'Yes', 'No', 1, 3, 80, 4.06),
-('HP Envy 16t-h000', 1149.99, 'HP', 'Windows 11', 'Inteli5', '12500H', 'Intel Arc A370M', 16, '2560 x 1600', 120, '16:10', 'Yes', 16, 512, 'Yes', 'Yes', 'No', 2, 2, 83, 5.12),
+('Samsung Galaxy Book Pro 15', 993, 'Samsung', 'Windows 10', 'Intel Core i7', '1165G7', 'Intel Iris', 15.6, '1920 x 1080', 60, '16:9', 'No', 16, 512, 'Yes', 'Yes', 'No', 1, 1, 68, 2.36),
+('Yogi 9i', 1124.99, 'Lenovo', 'Windows 11', 'Intel Core i7', '1185G7', 'Intel Iris', 14, '1920 x 1080', 60, '16:9', 'Yes', 8, 512, 'Yes', 'No', 'No', 1, 2, 60, 3),
+('Alienware x14', 1499.99, 'Dell', 'Windows 11', 'Intel Core i5', '12500H', 'Nvidia RTX 3050', 14, '1920 x 1080', 144, '16:9', 'No', 16, 512, 'Yes', 'Yes', 'No', 1, 3, 80, 4.06),
+('HP Envy 16t-h000', 1149.99, 'HP', 'Windows 11', 'Intel Core i5', '12500H', 'Intel Arc A370M', 16, '2560 x 1600', 120, '16:10', 'Yes', 16, 512, 'Yes', 'Yes', 'No', 2, 2, 83, 5.12),
 ('Asus Vivobook Flip 14 TM420IA-DB71T', 739, 'Asus', 'Windows 10', 'AMD Ryzen 7', '4700U', 'AMD Radeon Vega 7', 14, '1920 x 1080', 60, '16:9', 'Yes', 8, 512, 'No', 'Yes', 'No', 2, 1, 42, 3.31),
 ('Acer Aspire 5 Slim', 359, 'Acer', 'Windows 10', 'AMD Ryzen 3', '3200U', 'AMD Radeon Vega 3', 15.6, '1920 x 1080', 60, '16:9', 'No', 4, 128, 'No', 'No', 'Yes', 2, 1, 48, 3.97),
 ('Lenovo Flex 5i', 1059.99, 'Lenovo', 'Windows 11', 'Intel Core i7', '1255U', 'Intel Iris Xe', 14, '1920 x 1200', 60, '16:10', 'Yes', 8, 512, 'Yes', 'Yes', 'Yes', 2, 1, 52.5, 3.3),
