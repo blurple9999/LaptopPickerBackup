@@ -63,7 +63,7 @@
 
                     <div class="scrollable col-sm-12 col-md-12 col-lg-3">
                         <aside class="sidebar sidebar-layou2">
-                            <form action="" class="widget__form-search" method="">
+                            <form action="" class="widget__form-search" method="post">
 
                                 <div class="widget widget-filter">
                                     <h5 class="widget__title">Price Range</h5>
@@ -76,38 +76,38 @@
                                         <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span>
                                     </div>
                                     <div>
-                                        <input type="hidden" id="price_range" value="" name="price_range">
+                                        <input type="hidden" id="price_range" value="1-5000" name="price_range">
                                         <label for="">Price:</label>
                                         <input style="border: 0" type="text" readonly id="amount"
-                                            value=" $1 - $5000">
+                                            value="1-5000">
                                     </div>
 
                                 </div>
                                 <div class="widget widget-filter">
                                     <h5 class="widget__title">CPU Series</h5>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="CPU"
+                                        <input class="form-check-input" type="checkbox" name="CPUInput[]" value="AMD Ryzen 3">
                                             
                                         <label class="form-check-label">
                                         AMD Ryzen 3
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="CPU"
+                                        <input class="form-check-input" type="checkbox" name="CPUInput[]" value="AMD Ryzen 5">
                                             
                                         <label class="form-check-label">
                                         AMD Ryzen 5
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="CPU"
+                                        <input class="form-check-input" type="checkbox" name="CPUInput[]" value="AMD Ryzen 7">
                                             
                                         <label class="form-check-label">
                                             AMD Ryzen 7
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="CPU"
+                                        <input class="form-check-input" type="checkbox" name="CPUInput[]" value="AMD Ryzen 9">
                                             
                                         <label class="form-check-label">
                                             AMD Ryzen 9
@@ -115,7 +115,7 @@
                                         
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="CPU"
+                                        <input class="form-check-input" type="checkbox" name="CPUInput[]" value="Intel Core 3i">
                                             
                                         <label class="form-check-label">
                                             Intel Core i3
@@ -123,7 +123,7 @@
                                         
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="CPU"
+                                        <input class="form-check-input" type="checkbox" name="CPUInput[]" value="Intel Core i5">
                                             
                                         <label class="form-check-label">
                                             Intel Core i5
@@ -131,7 +131,7 @@
                                         
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="CPU"
+                                        <input class="form-check-input" type="checkbox" name="CPUInput[]" value="Intel Core i7">
                                             
                                         <label class="form-check-label">
                                             Intel Core i7
@@ -139,7 +139,7 @@
                                         
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="CPU"
+                                        <input class="form-check-input" type="checkbox" name="CPUInput[]" value="Intel Core i9">
                                             
                                         <label class="form-check-label">
                                             Intel Core i9
@@ -150,28 +150,28 @@
                                 <div class="widget widget-filter">
                                     <h5 class="widget__title">Storage Size</h5>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="storage"
+                                        <input class="form-check-input" type="checkbox" name="storageInput[]" value"128">
                                             
                                         <label class="form-check-label">
                                         128 GB
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="storage"
+                                        <input class="form-check-input" type="checkbox" name="storageInput[]" value"256">
                                             
                                         <label class="form-check-label">
                                         256 GB
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="storage"
+                                        <input class="form-check-input" type="checkbox" name="storageInput[]" value"512">
                                             
                                         <label class="form-check-label">
                                         512 GB
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="storage"
+                                        <input class="form-check-input" type="checkbox" name="storageInput[]" value"1024">
                                             
                                         <label class="form-check-label">
                                         1 TB
@@ -179,7 +179,7 @@
                                         
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="storage"
+                                        <input class="form-check-input" type="checkbox" name="storageInput[]" value"2048">
                                             
                                         <label class="form-check-label">
                                         2 TB
@@ -190,28 +190,28 @@
                                 <div class="widget widget-filter">
                                     <h5 class="widget__title">RAM</h5>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="ram"
+                                        <input class="form-check-input" type="checkbox" name="ramInput[]" value"4">
                                             
                                         <label class="form-check-label">
                                         4 GB
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="ram"
+                                        <input class="form-check-input" type="checkbox" name="ramInput[]" value"8">
                                             
                                         <label class="form-check-label">
                                         8 GB
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="ram"
+                                        <input class="form-check-input" type="checkbox" name="ramInput[]" value"16">
                                             
                                         <label class="form-check-label">
                                         16 GB
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="ram"
+                                        <input class="form-check-input" type="checkbox" name="ramInput[]" value"32">
                                             
                                         <label class="form-check-label">
                                         32 GB
@@ -223,14 +223,14 @@
                                 <div class="widget widget-filter">
                                     <h5 class="widget__title">OS</h5>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="os"
+                                        <input class="form-check-input" type="checkbox" name="osInput[]" value"Windows 10">
                                             
                                         <label class="form-check-label">
                                         Windows 10
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="os"
+                                        <input class="form-check-input" type="checkbox" name="osInput[]" value"Windows 11">
                                             
                                         <label class="form-check-label">
                                         Windows 11
@@ -240,28 +240,28 @@
                                 <div class="widget widget-filter">
                                     <h5 class="widget__title">Refresh Rate</h5>
                                     <div class="form-check">
-                                         <input class="form-check-input" type="checkbox" name="refresh"
+                                         <input class="form-check-input" type="checkbox" name="refreshInput[]" value"60">
                                                 
                                             <label class="form-check-label">
                                             60 Hz
                                             </label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" name="refresh"
+                                            <input class="form-check-input" type="checkbox" name="refreshInput[]" value"90">
                                                 
                                             <label class="form-check-label">
                                             90 Hz
                                             </label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" name="refresh"
+                                            <input class="form-check-input" type="checkbox" name="refreshInput[]" value"120">
                                                 
                                             <label class="form-check-label">
                                             120 Hz
                                             </label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" name="refresh"
+                                            <input class="form-check-input" type="checkbox" name="refreshInput[]" value"144">
                                                 
                                             <label class="form-check-label">
                                             144 Hz
@@ -273,28 +273,28 @@
                                 <div class="widget widget-filter">
                                     <h5 class="widget__title">Aspect Ratio</h5>
                                     <div class="form-check">
-                                         <input class="form-check-input" type="checkbox" name="aspect ratio"
+                                            <input class="form-check-input" type="checkbox" name="ratioInput[]" value"3:2">
                                                 
                                             <label class="form-check-label">
                                             3:2
                                             </label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" name="aspect ratio"
+                                            <input class="form-check-input" type="checkbox" name="ratioInput[]" value"16:9">
                                                 
                                             <label class="form-check-label">
                                             16:9
                                             </label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" name="aspect ratio"
+                                            <input class="form-check-input" type="checkbox" name="ratioInput[]" value"16:10">
                                                 
                                             <label class="form-check-label">
                                             16:10
                                             </label>
                                         </div>
                                        
-                                            
+                                    <input type="submit" value="Filter">        
                                     </div>
                                 </div>
                             </form>
