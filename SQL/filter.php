@@ -17,9 +17,15 @@ function create_task_table1() {
 function db_get_task_data1() {
     require("credentials.php");
     $conn = mysqli_connect($servername,$username,$password,$database);
-    $prices = $_POST["price_range"];
+    
+    //price filter stuff
+	$prices = $_POST["price_range"];
 	$price_arr = explode("-", "$prices");
-    $query = "SELECT Laptop, `CPU Series`, CPU, Price FROM laptop_list WHERE Price BETWEEN $price_arr[0] AND $price_arr[1];";
+	
+	//cpu filter stuff
+	$cpuseries = '(\'' . implode('\',\'', $_POST["CPUInput"]) .'\')';
+	
+    $query = "SELECT Laptop, `CPU Series`, CPU, Price FROM laptop_list WHERE Price BETWEEN $price_arr[0] AND $price_arr[1] AND `Cpu Series` IN $cpuseries;";
     $result = mysqli_query($conn,$query);
     $relation = array();
     while ($row = mysqli_fetch_row($result)) {
