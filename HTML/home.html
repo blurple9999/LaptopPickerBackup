@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title> Laptop Picker</title>
+<link rel="stylesheet"  href= "style.css" />
+</head>
+<body>
+	
+	<header>
+		<a href= "#" class= "logo">logo</a>
+<ul>
+
+	<li><a href="#" class="active">Home</a></li>
+	<li><a href="#">About</a></li>
+	<li><a href="#">Products</a></li>
+	<li><a href="#">Deals & Promotions</a></li>
+	<li><a href="#">Contact Us</a></li>
+</ul>
+</header>
+	<section>
+		<img src="img/circuit.png" id="circuit" />
+		<img src="img/bluesmoke.png" id="bluesmoke" />
+		<h2 id="text"> Laptop Picker</h2>
+		<a href="#" id="button">Products</a>
+	</section>
+	<script>
+		Let .bluesmoke = document.getElementById('bluesmoke');
+		Let .button = document.getElementById('button');
+		Let .text = document.getElementById('text');
+		window.addEventListener('scroll', function ()
+		{
+			Let .value = window.scrollY;
+			bluesmoke.style.top = value * 1.25 + 'px';
+			text.style.marginRight = value * 5 + 'px';
+        }
+	</script>
+
+	<section>
+	
+		<div class="Pic">
+			<span style="--i:1;"><img src="img/acer.png" alt="" /></span>
+			<span style="--i:2;"><img src="img/alien.png" alt="" /></span>
+			<span style="--i:3;"><img src="img/asus.png" alt="" /></span>
+			<span style="--i:4;"><img src="img/microsoft.png" alt="" /></span>
+			<span style="--i:5;"><img src="img/dell.png" alt="" /></span>
+			<span style="--i:6;"><img src="img/hp.png" alt="" /></span>
+			<span style="--i:7;"><img src="img/lenovo.png" alt="" /></span>
+			<span style="--i:8;"><img src="img/razer.png" alt="" /></span>
+			<span style="--i:9;"><img src="img/samsung.png" alt="" /></span>
+
+			<hr />EXPLORE<hr />
+		</div>
+	</section>	
+
+	<section class="service">
+		<div class="row">
+			<div class="service-col">
+				<img src="img/laptops.png" />
+				<div class="layer">
+					<h3>ENDLESS POSSIBILITIES</h3>
+				</div>
+			</div>
+			<div class="service-col">
+				<img src="img/search.png" />
+				<div class="layer">
+					<h3>CUSTOM FILTERING</h3>
+				</div>
+			</div>
+			<div class="service-col">
+				<img src="img/laptop.png" />
+				<div class="layer">
+					<h3>ENHANCED EXPERIENCE</h3>
+				</div>
+			</div>
+		</div>
+	
+	</section>
+</body>
+</html>
