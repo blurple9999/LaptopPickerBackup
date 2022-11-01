@@ -40,6 +40,15 @@ function db_get_task_data1() {
 	//aspect ratio filter
 	$ratio_arr = '(\'' . implode('\',\'', $_POST["ratioInput"]) .'\')';
 	
+	//manufacturer filter
+	$manufacturer_arr = '(\'' . implode('\',\'', $_POST["manufactureInput"]) .'\')';
+	
+	//touchscreen filter
+	$touch_arr = '(\'' . implode('\',\'', $_POST["touchInput"]) .'\')';
+	
+	//rj45 filter
+	$rj45_arr = '(\'' . implode('\',\'', $_POST["rj45Input"]) .'\')';
+	
 	//grab list
     $query = "SELECT Laptop, `CPU Series`, CPU, Price FROM laptop_list
     WHERE Price BETWEEN $price_arr[0] AND $price_arr[1]
@@ -49,6 +58,9 @@ function db_get_task_data1() {
     AND OS IN $OS_arr
     AND `Refresh Rate` IN $rr_arr
     AND `Aspect Ratio` IN $ratio_arr
+    AND Manufacturer IN $manufacturer_arr
+    AND Touchscreen IN $touch_arr
+    AND RJ45 IN $rj45_arr
     ;";
     
     //push result to create_task_table()
