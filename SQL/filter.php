@@ -19,13 +19,39 @@ function db_get_task_data1() {
     $conn = mysqli_connect($servername,$username,$password,$database);
     
     //price filter stuff
-	$prices = $_POST["price_range"];
+    $prices = $_POST["price_range"];
 	$price_arr = explode("-", "$prices");
 	
 	//cpu filter stuff
 	$cpuseries = '(\'' . implode('\',\'', $_POST["CPUInput"]) .'\')';
 	
-    $query = "SELECT Laptop, `CPU Series`, CPU, Price FROM laptop_list WHERE Price BETWEEN $price_arr[0] AND $price_arr[1] AND `Cpu Series` IN $cpuseries;";
+	//storage filter stuff
+    $storage_arr = '(\'' . implode('\',\'', $_POST["storageInput"]) .'\')';
+	
+	//ram filter stuff
+	$ram_arr = '(\'' . implode('\',\'', $_POST["ramInput"]) .'\')';
+	
+	//OS filter stuff
+	$OS_arr = '(\'' . implode('\',\'', $_POST["osInput"]) .'\')';
+	
+	//refresh rate filter
+	$rr_arr = '(\'' . implode('\',\'', $_POST["refreshInput"]) .'\')';
+	
+	//aspect ratio filter
+	$ratio_arr = '(\'' . implode('\',\'', $_POST["ratioInput"]) .'\')';
+	
+	//grab list
+    $query = "SELECT Laptop, `CPU Series`, CPU, Price FROM laptop_list
+    WHERE Price BETWEEN $price_arr[0] AND $price_arr[1]
+    AND `Cpu Series` IN $cpuseries
+    AND `Storage Size (GB)` IN $storage_arr
+    AND `RAM Size (GB)` IN $ram_arr
+    AND OS IN $OS_arr
+    AND `Refresh Rate` IN $rr_arr
+    AND `Aspect Ratio` IN $ratio_arr
+    ;";
+    
+    //push result to create_task_table()
     $result = mysqli_query($conn,$query);
     $relation = array();
     while ($row = mysqli_fetch_row($result)) {
