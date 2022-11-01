@@ -52,9 +52,9 @@
     }
     
     .imgproduct {
-      width: 200px;
-      height: 150px;
-      box-shadow: 2px 2px 2px rgba(0,0,0,.4);
+      width: 300px;
+      height: 200px;
+      box-shadow: 5px 5px 5px #c8ec66ce;
       transition: transform 0.3s linear;
     }
     a:hover #img1, a:focus #img1 {
@@ -66,11 +66,9 @@
     a:hover #img3, a:focus #img3 { 	
       transform: rotate(-7deg) scale(1.5); 
     } 
-    a:hover #img4, a:focus #img4 { 	
-      transform: rotate(2deg) scale(1.5); 
-    }  
+   
     a:hover img { 	
-      box-shadow: 6px 6px 6px rgba(0,0,0,.3); 
+      box-shadow: 6px 6px 6px rgba(36, 235, 18, 0.3); 
     } 
  
     
@@ -87,11 +85,11 @@
     </style>
     <link rel="stylesheet" href="asset/css/libraries.css" />
     <style>
-    .fieldsetabout{
+    .fieldsetabout{     /*field set css and border makes that dooted line*/
         size: 0mm;
         box-sizing: content-box;
         width: 100%;
-        border: 2mm dotted rgb(88, 210, 135);
+        border: 2mm dotted rgb(89, 150, 119);
        padding: 1em;
     }
     .welcome-text{
@@ -109,7 +107,7 @@
         color: rgb(224, 93, 45);
         margin-left: 50px;
     }
-    .aboutp{
+    .aboutp{     /* this css change the design for about us section*/
         
         font-size: large;
        font-family:  Georgia, "Times New Roman", Times, serif;
@@ -117,7 +115,7 @@
     
     }
     .foot{
-        color: rgb(250, 250, 250);
+        color: rgb(255, 250, 250);  /* this css change the footer coppy right section text color*/
     }
     .vissionp{
       
@@ -130,10 +128,10 @@
     }
     .imgproductfloat {
         float: right;
-        margin: 0 12px;
+        margin: 0 30px;  /*this change the image margin */
     }
     
-    .about-section {
+    .about-section {/* about section text css*/
         
       padding: 50px;
       text-align: center;
@@ -141,7 +139,7 @@
       color: white;
     }
     
-    blockquote {
+    blockquote {/* css for block qoute section*/
         border: 0;
         text-align: center;
         font-size: 2rem;
@@ -158,8 +156,8 @@
     }
     
 
-    .success-color {
-        color: #accf29!important;
+    .success-color {   /* this css change the blockqoute section text color*/
+        color: #83924d!important;
         font-family: cursive;
         line-height: 150%;
         font-size: x-large;
@@ -205,7 +203,6 @@ Header
                     <li class="nav__item"><a href="product.php" class="nav__item-link text-light">Product</a></li>
                     <li class="nav__item"><a href="about.html" class="nav__item-link text-light">About</a></li>
                     <li class="nav__item"><a href="contact.html" class="nav__item-link text-light">Contact</a></li>
-                    
                 </ul>
             </div>
         </div><!-- /.container -->
@@ -214,7 +211,7 @@ Header
 
 </header><!-- /.Header -->
 
-
+<div class="container">
 <div class="about-section">
   <b><h1>About Us</h1>
   <marquee><b><i><h2>THANKS FOR VISITING US<h2></h2></i></b></marquee>
@@ -239,13 +236,14 @@ Header
     <a href=""><img class="imgproduct imgproductfloat" src="asset/images/q.jpg" id="img3" alt=""></a>
    
 </ul>
+</div>
  
 
 
 
 
 
-    <fieldset class="container fieldsetabout">
+    <fieldset class="container fieldsetabout"><!-- /.container -->
     <legend>
         <b><blockquote>"Armed with a passion for<br>
         <strong class="success-color">technology</strong>
@@ -266,13 +264,8 @@ Header
 		Your browser doesn't support HTML5 video. Sorry.
 	</video>
  
-   <a href="contact.html" class="smooth">Advising</a>
-</fieldset>
-
-<h2></h2>
-
-<p></p>
-
+   <a href="contact.html" class="smooth">advising</a>
+</fieldset><!-- /.container -->
 </div>
 
     <!-- ========================
@@ -336,10 +329,7 @@ Header
 
                         <ul class="social__icons social__icons-white justify-content-center">
                             <li><a href="https://www.instagram.com/laptoppicker/"><i class="fa fa-instagram"></i></a></li>
-
                             <li><a href="https://www.facebook.com/people/Laptop-Picker/100087542163785/"><i class="fa fa-facebook"></i></a></li>
-
-
                             <li><a href="https://twitter.com/laptoppicker"><i class="fa fa-twitter"></i></a></li>
                         </ul><!-- /.social__icons -->
 <br>
