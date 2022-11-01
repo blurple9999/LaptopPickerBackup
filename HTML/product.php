@@ -481,12 +481,12 @@
                             <p class="mx-2 mb-20">LaptopPicker is a platform for finding best suitable laptop for users.</p>
 
                             <ul class="social__icons social__icons-white justify-content-center">
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="https://www.instagram.com/laptoppicker/"><i class="fa fa-instagram"></i></a></li>
 
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.facebook.com/people/Laptop-Picker/100087542163785/"><i class="fa fa-facebook"></i></a></li>
 
 
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://twitter.com/laptoppicker"><i class="fa fa-twitter"></i></a></li>
                             </ul><!-- /.social__icons -->
 
                             <br>
