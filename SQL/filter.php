@@ -1,8 +1,8 @@
 <?php
 
-function create_task_table1() {
+function create_task_table() {
     //  Request for task data
-    $tasks = db_get_task_data1();
+    $tasks = db_get_task_data();
     // Create table with task data
     foreach ($tasks as $r) {
         echo "<tr>\n";
@@ -14,7 +14,7 @@ function create_task_table1() {
     }
 }
 
-function db_get_task_data1() {
+function db_get_task_data() {
     require("credentials.php");
     $conn = mysqli_connect($servername,$username,$password,$database);
     
