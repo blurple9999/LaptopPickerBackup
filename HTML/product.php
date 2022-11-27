@@ -116,7 +116,7 @@
                                         
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="CPUInput[]" value="Intel Core 3i" checked>
+                                        <input class="form-check-input" type="checkbox" name="CPUInput[]" value="Intel Core i3" checked>
                                             
                                         <label class="form-check-label">
                                             Intel Core i3
