@@ -1,3 +1,8 @@
+//This class was created for this assignment; I am
+//not using a class for this project, as I find it
+//simpler and more efficient to have everything
+//parsed through functions instead.
+
 <?php
 final class testClass{
 	private $price_arr;
@@ -28,11 +33,6 @@ final class testClass{
 		} else { $ram_arr = '(\'4\',\'8\',\'16\',\'32\')'; }
 		return $ram_arr;
 	}
-	
-	//testing
-	//public function returnPrice(){ return $price_arr; }
-	//public function returnStorage(){ return $storage_arr; }
-	//public function returnRam(){ return $ram_arr; }
 }
 use PHPUnit\Framework\TestCase;
 final class testClasstest extends TestCase{
