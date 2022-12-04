@@ -147,9 +147,32 @@
                                         </label>
                                         
                                     </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="CPUInput[]" value="Intel Celron" checked>
+                                            
+                                        <label class="form-check-label">
+                                            Intel Celron
+                                        </label>
+                                        
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="CPUInput[]" value="Intel Pentium" checked>
+                                            
+                                        <label class="form-check-label">
+                                            Intel Pentium
+                                        </label>
+                                        
+                                    </div>
                                 </div>
                                 <div class="widget widget-filter">
                                     <h5 class="widget__title">Storage Size</h5>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="storageInput[]" value="64" checked>
+                                            
+                                        <label class="form-check-label">
+                                        64 GB
+                                        </label>
+                                    </div>
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" name="storageInput[]" value="128" checked>
                                             
@@ -219,6 +242,14 @@
                                         </label>
                                         
                                     </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="ramInput[]" value="64" checked>
+                                            
+                                        <label class="form-check-label">
+                                        64 GB
+                                        </label>
+                                        
+                                    </div>
                                 </div>
 
                                 <div class="widget widget-filter">
@@ -248,18 +279,12 @@
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="manufactureInput[]" value="Samsung" checked>
+                                        <input class="form-check-input" type="checkbox" name="manufactureInput[]" value="Asus" checked>
                                             
                                         <label class="form-check-label">
-                                        Samsung
+                                            Asus
                                         </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="manufactureInput[]" value="Lenovo" checked>
-                                            
-                                        <label class="form-check-label">
-                                            Lenovo
-                                        </label>
+                                        
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" name="manufactureInput[]" value="Dell" checked>
@@ -277,6 +302,13 @@
                                         </label>
                                         
                                     </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="manufactureInput[]" value="Lenovo" checked>
+                                            
+                                        <label class="form-check-label">
+                                            Lenovo
+                                        </label>
+                                    </div>
                                
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" name="manufactureInput[]" value="Microsoft" checked>
@@ -286,13 +318,21 @@
                                         </label>
                                         
                                     </div>
+                               
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="manufactureInput[]" value="Asus" checked>
+                                        <input class="form-check-input" type="checkbox" name="manufactureInput[]" value="MSI" checked>
                                             
                                         <label class="form-check-label">
-                                            Asus
+                                            MSI
                                         </label>
                                         
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="manufactureInput[]" value="Samsung" checked>
+                                            
+                                        <label class="form-check-label">
+                                        Samsung
+                                        </label>
                                     </div>
                                 </div>
                                 <div class="widget widget-filter">
@@ -389,9 +429,21 @@
                                             <label class="form-check-label">
                                             144 Hz
                                             </label>
-                                            
-                                    
-                                </div>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="refreshInput[]" value="165" checked>
+                                                
+                                            <label class="form-check-label">
+                                            165 Hz
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="refreshInput[]" value="240" checked>
+                                                
+                                            <label class="form-check-label">
+                                            240 Hz
+                                            </label>
+                                        </div>
                                 </div>
                                 <div class="widget widget-filter">
                                     <h5 class="widget__title">Aspect Ratio</h5>
