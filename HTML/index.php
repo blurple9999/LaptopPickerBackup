@@ -1,20 +1,48 @@
+<?php
+
+session_start();
+
+if (isset($_SESSION["user_id"])) {
+    
+    $mysqli = require __DIR__ . "/database.php";
+    
+    $sql = "SELECT * FROM user
+            WHERE id = {$_SESSION["user_id"]}";
+            
+    $result = $mysqli->query($sql);
+    
+    $user = $result->fetch_assoc();
+}
+
+?>
 <!DOCTYPE html>
 <html>
-<head> 
-	<title> Laptop Picker</title>
-<link rel="stylesheet"  href= "style.css" />
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet"  href= "style.css" />
 </head>
-<body>
-	
-	<header>
+<body><header>
 		<a href= "#" class= "logo">logo</a>
+        
 <ul>
+<?php if (isset($user)): ?>
+        
+        
+        
+        <li><a href="logout.php">Log out</a></li>
 
 	<li><a href="index.html" class="active">Home</a></li>
 	<li><a href="product.php">Product</a></li>
 	<li><a href="about.html">About</a></li>
 	<li><a href="contact.html">Contact</a></li>
 </ul>
+<?php else: ?>
+        
+        <p><a href="login.php">Log in</a> or <a href="signup.html">sign up</a></p>
+        
+    <?php endif; ?>
+
 </header>
 	<section>
 		<img src="img/circuit.png" id="circuit" />
@@ -26,7 +54,7 @@
 		Let .bluesmoke = document.getElementById('bluesmoke');
 		Let .button = document.getElementById('button');
 		Let .text = document.getElementById('text');
-		window.addEventListener('scroll', function ()
+		window.addEventListener('scroll', function ())
 		{
 			Let .value = window.scrollY;
 			bluesmoke.style.top = value * 1.25 + 'px';
@@ -74,5 +102,19 @@
 		</div>
 	
 	</section>
+    
+
+    
 </body>
 </html>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
