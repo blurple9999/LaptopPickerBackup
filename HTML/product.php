@@ -43,6 +43,7 @@
                         <li class="nav__item"><a href="product.php" class="nav__item-link text-light">Product</a></li>
                         <li class="nav__item"><a href="about.html" class="nav__item-link text-light">About</a></li>
                         <li class="nav__item"><a href="contact.html" class="nav__item-link text-light">Contact</a></li>
+                        <li class="nav__item"><a href="search.php" class="nav__item-link text-light">Search</a></li>
 
                     </ul>
                 </div>
