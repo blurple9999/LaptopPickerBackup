@@ -83,7 +83,7 @@
 							<?php
 								create_task_table1();
 							?>
-						</table>
+						</table> 
                         
                     </div>
                 </div>
