@@ -4,7 +4,7 @@ session_start();
 
 if (isset($_SESSION["user_id"])) {
     
-    $mysqli = require __DIR__ . "/database.php";
+    $mysqli = require __DIR__ . "/credentials.php";
     
     $sql = "SELECT * FROM user
             WHERE id = {$_SESSION["user_id"]}";
@@ -32,7 +32,7 @@ if (isset($_SESSION["user_id"])) {
         
         <li><a href="logout.php">Log out</a></li>
 
-	<li><a href="index.html" class="active">Home</a></li>
+	<li><a href="index.php" class="active">Home</a></li>
 	<li><a href="product.php">Product</a></li>
 	<li><a href="about.html">About</a></li>
 	<li><a href="contact.html">Contact</a></li>
