@@ -73,51 +73,17 @@
             <div class="col-md-12">
                 <div class="card mt-4">
                     <div class="card-body">
-                    <table class="table table-bordered">
-                            <thead>
-                                <tr>
-                                    <th>Laptop</th>
-                                    <th>CPU</th>
-                                    <th>Price</th>
-                                  
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <?php 
-                                    $con = mysqli_connect("localhost","root","","laptop_list");
-
-                                    if(isset($_GET['search']))
-                                    {
-                                        $filtervalues = $_GET['search'];
-                                        $query = "SELECT * FROM laptop_list WHERE CONCAT(Laptop,CPU,Price) LIKE '%$filtervalues%' ";
-                                        $query_run = mysqli_query($con, $query);
-
-                                        if(mysqli_num_rows($query_run) > 0)
-                                        {
-                                            foreach($query_run as $items)
-                                            {
-                                                ?>
-                                                <tr>
-                                                    <td><?= $items['Laptop']; ?></td>
-                                                    <td><?= $items['CPU']; ?></td>
-                                                    <td><?= $items['Price']; ?></td>
-                                                   
-                                                </tr>
-                                                <?php
-                                            }
-                                        }
-                                        else
-                                        {
-                                            ?>
-                                                <tr>
-                                                    <td colspan="4">This Product is Not Available</td>
-                                                </tr>
-                                            <?php
-                                        }
-                                    }
-                                ?>
-                            </tbody>
-                        </table>
+                    <table width=75% height=100px>
+							<tr>
+								<th>Laptop </th>
+								<th>CPU</th>
+								<th>Price</th>
+							</tr>
+                            
+							<?php
+								create_task_table1();
+							?>
+						</table> 
                         
                     </div>
                 </div>
