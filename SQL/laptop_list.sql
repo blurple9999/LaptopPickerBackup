@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Dec 05, 2022 at 03:17 AM
+-- Generation Time: Dec 06, 2022 at 01:27 AM
 -- Server version: 10.5.16-MariaDB
 -- PHP Version: 7.3.32
 
@@ -78,8 +78,8 @@ INSERT INTO `laptop_list` (`Laptop`, `Price`, `Manufacturer`, `OS`, `CPU Series`
 ('MSI Alpha 17 B5EEK', 1149, 'MSI', 'Windows 10', 'AMD Ryzen 7', '5800H', 'AMD Radeon RX 6600M', 17.3, '1920 x 1080', 144, '16:9', 'No', 16, 512, 'No', 'No', 'Yes', 3, 1, 53, 4, 'https://www.walmart.com/ip/MSI-Alpha-17-B5EEK-B5EEK-022-17-3-Gaming-Notebook-Full-HD-1920-x-1080-AMD-Ryzen-7-5800H-Octa-core-8-Core-3-20-GHz-16-GB-Total-RAM-512-SSD-Aluminum-Bl/860024447'),
 ('MSI Bravo 15 A4DDR-022', 929, 'MSI', 'Windows 10', 'AMD Ryzen 5', '4600H', 'AMD Radeon RX 5500M', 15.6, '1920 x 1080', 144, '16:9', 'No', 8, 512, 'No', 'No', 'Yes', 2, 2, 53, 4, 'https://www.walmart.com/ip/MSI-Bravo-15-A4DDR-022-15-6-Gaming-Notebook-AMD-Ryzen-5-4600H-8GB-512GB-SSD-AMD-Radeon-RX5500M-Windows-10-Aluminum-Black/690713188'),
 ('MSI Bravo 15 B5DD-010', 799.99, 'MSI', 'Windows 10', 'AMD Ryzen 5', '5600H', 'AMD Radeon RX 5500M', 15.6, '1920 x 1080', 144, '16:9', 'No', 16, 512, 'No', 'No', 'Yes', 3, 1, 53, 4.63, 'https://us-store.msi.com/Bravo-15-B5DD-010'),
-('MSI Creator Z17 A12UHST-046', 4499.99, 'MSI', 'Windows 11', 'Intel Core i9', '12900H', 'NVIDIA RTX A5500', 17, '2560 x 1600', 165, '16:10', 'Yes', 64, 1024, 'Yes', 'No', 'No', 1, 2, 90, 5.48, 'https://us-store.msi.com/CreatorPro-Z17-A12UMST-097'),
-('MSI CreatorPro Z16P B12UMST-089', 4399.99, 'MSI', 'Windows 11', 'Intel Core i9', '12900H', 'NVIDIA RTX A5500', 16, '2560 x 1600', 165, '16:10', 'Yes', 64, 1024, 'Yes', 'No', 'No', 1, 2, 90, 5.26, 'https://us-store.msi.com/CreatorPro-Z16P-B12UMST-089'),
+('MSI Creator Z17 A12UHST-046', 4499.99, 'MSI', 'Windows 11', 'Intel Core i9', '12900H', 'Nvidia RTX A5500', 17, '2560 x 1600', 165, '16:10', 'Yes', 64, 1024, 'Yes', 'No', 'No', 1, 2, 90, 5.48, 'https://us-store.msi.com/CreatorPro-Z17-A12UMST-097'),
+('MSI CreatorPro Z16P B12UMST-089', 4399.99, 'MSI', 'Windows 11', 'Intel Core i9', '12900H', 'Nvidia RTX A5500', 16, '2560 x 1600', 165, '16:10', 'Yes', 64, 1024, 'Yes', 'No', 'No', 1, 2, 90, 5.26, 'https://us-store.msi.com/CreatorPro-Z16P-B12UMST-089'),
 ('MSI Delta 15001', 1599.99, 'MSI', 'Windows 10', 'AMD Ryzen 7', '5800H', 'AMD Radeon RX 6700M', 15.6, '1920 x 1080', 240, '16:9', 'No', 16, 1024, 'No', 'No', 'No', 2, 2, 53, 4.19, 'https://www.bestbuy.com/site/msi-delta-15-6-fhd-240hz-gaming-laptop-ryzen-r7-5800-radeon-rx6700m-1tb-ssd-16gb-memory-black/6468118.p'),
 ('MSI Laptop Modern 15', 999, 'MSI', 'Windows 11', 'Intel Core i7', '1255U', 'Intel Arc A370M', 15.6, '1920 x 1080', 60, '16:9', 'No', 16, 512, 'No', 'Yes', 'No', 3, 1, 52, 3.85, 'https://www.newegg.com/black-msi-modern-15-b12hw-001-work-business/p/N82E16834156288'),
 ('MSI Summit E16FlipEvo A12MT-009', 1149.99, 'MSI', 'Windows 11', 'Intel Core i7', '1260P', 'Intel Iris Xe', 16, '1920 x 1200', 165, '16:10', 'Yes', 16, 512, 'Yes', 'Yes', 'No', 2, 2, 82, 4.62, 'https://us-store.msi.com/Summit-E16FlipEvo-A12MT-009'),
