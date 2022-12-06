@@ -1,7 +1,3 @@
-<?php
-	include("filter.php");
-?>
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -84,12 +80,13 @@
                             </thead>
                             <tbody>
                                 <?php 
-                                    $con = mysqli_connect("localhost","root","","laptop_list");
+									require("credentials.php");
+                                    $con = mysqli_connect($servername,$username,$password,$database);
 
                                     if(isset($_GET['search']))
                                     {
                                         $filtervalues = $_GET['search'];
-                                        $query = "SELECT * FROM laptop_list WHERE CONCAT(Laptop,CPU,Price) LIKE '%$filtervalues%' ";
+                                        $query = "SELECT * FROM laptop_list WHERE CONCAT(Laptop,`CPU Series`,CPU,Price,Link) LIKE '%$filtervalues%' ";
                                         $query_run = mysqli_query($con, $query);
 
                                         if(mysqli_num_rows($query_run) > 0)
@@ -98,8 +95,8 @@
                                             {
                                                 ?>
                                                 <tr>
-                                                    <td><?= $items['Laptop']; ?></td>
-                                                    <td><?= $items['CPU']; ?></td>
+                                                    <td><a href="<?= $items['Link']; ?>"><?= $items['Laptop']; ?></a></td>
+                                                    <td><?= $items['CPU Series'];?> <?= $items['CPU']; ?></td>
                                                     <td><?= $items['Price']; ?></td>
                                                    
                                                 </tr>
