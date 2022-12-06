@@ -6,7 +6,10 @@ function create_task_table1() {
 	// Create table with task data
 	foreach ($tasks as $r) {
 		echo "<tr>\n";
-		echo "<td><a href=\"" . $r[3] . "\">" . $r[0] . "</a></td>\n";
+		echo "<td></td>\n";//fixes random issue im having with checkbox alignment
+		echo "<td><input class=\"form-check-input\" type=\"checkbox\" name=\""
+		    . $r[0] . "\" padding-left=\"10px\">
+		    <a href=\"" . $r[3] . "\">" . $r[0] . "</a></td>\n";
 		echo "<td>" . $r[1] . "</td>\n";
 		echo "<td>" . $r[2] . "</td>\n";
 		echo "</tr>\n";
@@ -199,7 +202,8 @@ function db_get_task_data1() {
 	AND `Battery Capacity` BETWEEN $batt_arr[0] AND $batt_arr[1]
 	AND Weight BETWEEN $weight_arr[0] AND $weight_arr[1]
 	$gpu_arr
-	;";
+	ORDER BY Price
+	;";// ^ lowest to highest price
 	//echo $query; //debugging purposes
 	
 	//push result to create_task_table()
@@ -208,7 +212,7 @@ function db_get_task_data1() {
 	while ($row = mysqli_fetch_row($result)) {
 		$temp = array();
 		$cpu = "$row[1] $row[2]";
-		array_push($temp,$row[0],$cpu,$row[3],$row[4]);
+		array_push($temp,$row[0],$cpu,number_format((float)$row[3], 2, '.', ''),$row[4]);
 		array_push($relation,$temp);
 	}
 	mysqli_close($conn);
