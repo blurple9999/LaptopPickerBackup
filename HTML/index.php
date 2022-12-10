@@ -214,55 +214,5 @@ if (isset($_SESSION["user_id"])) {
             <div class="hexagon"></div>
         </div>
     </div>
-
-
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<section>
-    <div class="Pic">
-        <span style="--i:1;"><img src="img/acer.png" alt="" /></span>
-        <span style="--i:2;"><img src="img/alien.png" alt="" /></span>
-        <span style="--i:3;"><img src="img/asus.png" alt="" /></span>
-        <span style="--i:4;"><img src="img/microsoft.png" alt="" /></span>
-        <span style="--i:5;"><img src="img/dell.png" alt="" /></span>
-        <span style="--i:6;"><img src="img/hp.png" alt="" /></span>
-        <span style="--i:7;"><img src="img/lenovo.png" alt="" /></span>
-        <span style="--i:8;"><img src="img/razer.png" alt="" /></span>
-        <span style="--i:9;"><img src="img/samsung.png" alt="" /></span>
-
-        <hr />EXPLORE<hr />
-    </div>
-</section>
-</br>
-
-
-
 </body>
 </html>
