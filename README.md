@@ -12,3 +12,10 @@ http://laptoppicker4110.000webhostapp.com/
 - Anika Rahman
 - Sanjida Sultana
 - Mehedi Zihad
+
+# Technology Stack
+- PHP
+- HTML
+- CSS
+- JavaScript
+- Hack
