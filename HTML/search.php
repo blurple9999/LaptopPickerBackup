@@ -107,7 +107,7 @@
                                         {
                                             ?>
                                                 <tr>
-                                                    <td colspan="4">This Product is Not Available</td>
+                                                    <td colspan="4">This Product is Not Available </td>
                                                 </tr>
                                             <?php
                                         }
