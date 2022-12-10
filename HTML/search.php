@@ -1,7 +1,3 @@
-<?php
-	include("filter.php");
-?>
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -73,17 +69,52 @@
             <div class="col-md-12">
                 <div class="card mt-4">
                     <div class="card-body">
-                    <table width=75% height=100px>
-							<tr>
-								<th>Laptop </th>
-								<th>CPU</th>
-								<th>Price</th>
-							</tr>
-                            
-							<?php
-								create_task_table1();
-							?>
-						</table> 
+                    <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Laptop</th>
+                                    <th>CPU</th>
+                                    <th>Price</th>
+                                  
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php 
+									require("credentials.php");
+                                    $con = mysqli_connect($servername,$username,$password,$database);
+
+                                    if(isset($_GET['search']))
+                                    {
+                                        $filtervalues = $_GET['search'];
+                                        $query = "SELECT * FROM laptop_list WHERE CONCAT(Laptop,`CPU Series`,CPU,Price,Link) LIKE '%$filtervalues%' ";
+                                        $query_run = mysqli_query($con, $query);
+
+                                        if(mysqli_num_rows($query_run) > 0)
+                                        {
+                                            foreach($query_run as $items)
+                                            {
+                                                ?>
+                                                <tr>
+                                                    <td><a href="<?= $items['Link']; ?>"><?= $items['Laptop']; ?></a></td>
+                                                    <td><?= $items['CPU Series'];?> <?= $items['CPU']; ?></td>
+                                                    <td><?= $items['Price']; ?></td>
+                                                   
+                                                </tr>
+                                                <?php
+                                            }
+                                        }
+                                        else
+                                        {
+                                            ?>
+                                                <tr>
+                                                    <td colspan="4">This Product is Not Available</td>
+                                                </tr>
+                                            <?php
+                                        }
+                                    }
+                                ?>
+                            </tbody>
+                        </table>
                         
                     </div>
                 </div>
