@@ -1,4 +1,5 @@
 <?php
+require("credentials.php");
 
 if (empty($_POST["name"])) {
     die("Name is required");
@@ -26,10 +27,15 @@ if ($_POST["password"] !== $_POST["password_confirmation"]) {
 
 $password_hash = password_hash($_POST["password"], PASSWORD_DEFAULT);
 
+
 $mysqli = require __DIR__ . "/credentials.php";
 
 $sql = "INSERT INTO user (name, email, password_hash)
         VALUES (?, ?, ?)";
+        $mysqli=new mysqli(hostname: $host,
+        username: $username,
+        password: $password,
+        database: $dbname);
         
 $stmt = $mysqli->stmt_init();
 
