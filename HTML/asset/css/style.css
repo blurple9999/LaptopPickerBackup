@@ -15,7 +15,7 @@ body {
 }
 
 ::selection {
-	background-color: #d3a971;
+	background-color: #00e66b;
 	color: #fff
 }
 
@@ -29,7 +29,7 @@ a {
 }
 
 a:hover {
-	color: #a97735;
+	color: #e76e04;
 	text-decoration: none
 }
 
@@ -335,7 +335,7 @@ h6 {
 	height: 2px;
 	margin: auto;
 	display: block;
-	background-color: #d3a971;
+	background-color: #00e66b;
 	-webkit-transition: .5s ease;
 	-moz-transition: .5s ease;
 	-ms-transition: .5s ease;
@@ -345,7 +345,7 @@ h6 {
 
 .navbar .nav__item .nav__item-link.active,
 .navbar .nav__item .nav__item-link:hover {
-	color: #d3a971
+	color: #00e66b
 }
 
 .navbar .nav__item .nav__item-link.active:before,
@@ -408,7 +408,7 @@ h6 {
 }
 
 .navbar .dropdown-menu .nav__item .nav__item-link:hover {
-	color: #d3a971
+	color: #00e66b
 }
 
 .navbar .dropdown-menu .nav__item .nav__item-link:hover:before {
@@ -501,7 +501,7 @@ h6 {
 }
 
 .social__icons li a:hover {
-	color: #d3a971
+	color: #00e66b
 }
 
 .social__icons-white li a {
