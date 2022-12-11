@@ -5,6 +5,7 @@ $is_invalid = false;
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     
     $mysqli = require __DIR__ . "/credentials.php";
+    $mysqli=new mysqli($servername,$username,$password,$database);
     
     $sql = sprintf("SELECT * FROM user
                     WHERE email = '%s'",
@@ -61,11 +62,3 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     
 </body>
 </html>
-
-
-
-
-
-
-
-
