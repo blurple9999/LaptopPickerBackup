@@ -32,10 +32,7 @@ $mysqli = require __DIR__ . "/credentials.php";
 
 $sql = "INSERT INTO user (name, email, password_hash)
         VALUES (?, ?, ?)";
-        $mysqli=new mysqli(hostname: $host,
-        username: $username,
-        password: $password,
-        database: $dbname);
+        $mysqli=new mysqli($servername,$username,$password,$database);
         
 $stmt = $mysqli->stmt_init();
 
@@ -61,11 +58,3 @@ if ($stmt->execute()) {
         die($mysqli->error . " " . $mysqli->errno);
     }
 }
-
-
-
-
-
-
-
-

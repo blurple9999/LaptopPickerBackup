@@ -4,11 +4,13 @@ session_start();
 
 if (isset($_SESSION["user_id"])) {
     
-    $mysqli = require __DIR__ . "/credendials.php";
+    $mysqli = require __DIR__ . "/credentials.php";
     
     $sql = "SELECT * FROM user
             WHERE id = {$_SESSION["user_id"]}";
             
+    
+    $mysqli=new mysqli($servername,$username,$password,$database);
     $result = $mysqli->query($sql);
     
     $user = $result->fetch_assoc();
