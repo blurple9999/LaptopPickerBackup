@@ -1013,7 +1013,6 @@
     
     // Persist state
         localStorage.CBState = JSON.stringify(cbstate);
-	      //test change to restore history
       });
     }
   });
