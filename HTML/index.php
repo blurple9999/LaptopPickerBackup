@@ -58,6 +58,7 @@ if (isset($_SESSION["user_id"])) {
 	<li><a href="product.php">Product</a></li>
 	<li><a href="about.html">About</a></li>
 	<li><a href="contactfrom.php">Contact</a></li>
+    <li><a href="search.php">Search</a></li>
 </ul>
 <?php else: ?>
         
