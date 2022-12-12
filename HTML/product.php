@@ -1013,6 +1013,7 @@
     
     // Persist state
         localStorage.CBState = JSON.stringify(cbstate);
+	      //test
       });
     }
   });
