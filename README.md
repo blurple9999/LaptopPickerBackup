@@ -31,8 +31,10 @@ Our Website(LaptopPicker) can provide a list of all purchasable laptops across a
 - Mehedi Zihad
 
 # Technology Stack
-- PHP
-- HTML
+- ![image](https://user-images.githubusercontent.com/84642696/207213856-01b23754-e64f-4af6-9a98-d0e6458bf0f3.png)
+
+- ![image](https://user-images.githubusercontent.com/84642696/207213894-b747f5d9-c73c-4c47-8917-b41dfc345209.png)
+
 - CSS
 - JavaScript
 - Hack
