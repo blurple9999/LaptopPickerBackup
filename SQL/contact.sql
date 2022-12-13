@@ -37,27 +37,6 @@ CREATE TABLE `contact` (
 --
 -- Dumping data for table `contact`
 --
-
-INSERT INTO `contact` (`Full_name`, `email`, `mobile`, `Comment`) VALUES
-('sanjida', 'sanjida.shanta64@gmail.com', '3133981648', ''),
-('sanjida sultana', 'sanjida.shanta64@gmail.com', '3133981648', 'this is sanjida'),
-('sanjida sultana', 'sanjida.shanta64@gmail.com', '3133981648', 'this is sanjida nila haque'),
-('sanjida sultana', 'sanjida.shanta64@gmail.com', '3133981648', 'this ti kdjffdjjfd'),
-('sanjida sultana', 'sanjida.shanta64@gmail.com', '3133981648', 'could u please call me'),
-('sanjida sultana', 'sanjida.shanta64@gmail.com', '3133981648', 'thisffgjjhhhhhjuyyttrt'),
-('Laptoppicker', 'sanjida6497@gmail.com', '3133981648', 'this is sanjida'),
-('Laptoppicker', 'sanjida6497@gmail.com', '3133981648', 'this is sanjida'),
-('sanjida sultana', 'sanjida.shanta64@gmail.com', '3133981648', 'this is sanjida'),
-('sanjida sultana', 'sanjida.shanta64@gmail.com', '3133981648', 'thisffgjjhhhhhjuyyttrt'),
-('sanjida sultana', 'sanjida.shanta64@gmail.com', '3133981648', 'thisffgjjhhhhhjuyyttrt'),
-('sanjida sultana', 'sanjida.shanta64@gmail.com', '3133981648', 'rrrrrrrrrrrrrrrr'),
-('sanjida sultana', 'sanjida.shanta64@gmail.com', '3133981648', 'sanjida'),
-('sanjida sultana', 'sanjida.shanta64@gmail.com', '3133981648', 'ddddddddddddddddd'),
-('', '', '', ''),
-('', '', '', ''),
-('', '', '', ''),
-('sanjida sultana', 'sanjida.shanta64@gmail.com', 'ddddddd', 'ssssssssssssssdddsqhjcbsnbc'),
-('Kanta Islam', 'Kanta98syl@gmail.com', '33190909090089', 'bdfgdashgjhsdg');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
