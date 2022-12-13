@@ -14,6 +14,10 @@ Our Website(LaptopPicker) can provide a list of all purchasable laptops across a
 - Log In
 -![image](https://user-images.githubusercontent.com/84642696/207200014-a403205f-ab8b-44f8-b338-65055c7e719d.png)
 
+- Sign Up
+![image](https://user-images.githubusercontent.com/84642696/207200119-d4e9a5ce-52d3-4f16-96b9-79b7aa9ac2e5.png)
+
+
 
 
 
