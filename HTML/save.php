@@ -1,6 +1,6 @@
 <?php
 require("credentials.php");
-$con = mysqli_connect($servername,$username,$password,$database);
+$conn = mysqli_connect($servername,$username,$password,$database);
 
 $fullname = $_POST["fname"];
 $email = $_POST["email"];
