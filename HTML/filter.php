@@ -6,10 +6,12 @@ function create_task_table1() {
 	// Create table with task data
 	foreach ($tasks as $r) {
 		echo "<tr>\n";
-		echo "<td>" . $r[0] . "</td>\n";
+		echo "<td></td>\n";//fixes random issue im having with checkbox alignment
+		echo "<td><input class=\"form-check-input\" type=\"checkbox\" name=\""
+		    . $r[0] . "\" padding-left=\"10px\">
+		    <a href=\"" . $r[3] . "\">" . $r[0] . "</a></td>\n";
 		echo "<td>" . $r[1] . "</td>\n";
 		echo "<td>" . $r[2] . "</td>\n";
-		//echo "<td>" . $r[3] . "</td>\n"; //deprecated
 		echo "</tr>\n";
 	}
 }
@@ -28,7 +30,8 @@ function db_get_task_data1() {
 	//dynamically show all within that category by outright skipping
 	//that part of the filter. Next line helps accomplish this.
 	$cpuseries = $storage_arr = $ram_arr = $OS_arr = $rr_arr = $ratio_arr = 
-		$manufacturer_arr = $touch_arr = $rj45_arr = NULL;
+		$manufacturer_arr = $touch_arr = $rj45_arr = $resolution_arr = 
+		$tb_arr = $sd_arr = $gpu_arr = NULL;
 	
 	//price filter stuff
 	$defaultPriceMin = 0;
@@ -96,6 +99,76 @@ function db_get_task_data1() {
 	} 
 	//else { $rj45_arr = '(\'Yes\',\'No\')'; }
 	
+	//display size filter 
+	$defaultDisplayMin = 10;
+	$defaultDisplayMax = 20;
+	if (!empty($_POST["display_range"])){
+		$display_arr = explode("-", $_POST["display_range"]);
+	} else {
+		$display_arr[0] = $defaultDisplayMin;
+		$display_arr[1] = $defaultDisplayMax;
+	}
+	
+	//resolution filter
+	if (!empty($_POST["resolutionInput"])){
+		$resolution_arr = 'AND Resolution IN (\'' . implode('\',\'', $_POST["resolutionInput"]) .'\')';
+	}
+	
+	//thunderbolt filter
+	if (!empty($_POST["tbInput"])){
+		$tb_arr = 'AND Thunderbolt IN (\'' . implode('\',\'', $_POST["tbInput"]) .'\')';
+	} 
+	
+	//sd filter
+	if (!empty($_POST["sdInput"])){
+		$sd_arr = 'AND `Micro SD` IN (\'' . implode('\',\'', $_POST["sdInput"]) .'\')';
+	}
+	
+	//gpu filter
+	if (!empty($_POST["GPUInput"])){
+		$gpu_arr = 'AND GPU IN (\'' . implode('\',\'', $_POST["GPUInput"]) .'\')';
+	}
+	
+	//usba filter 
+	$defaultUSBAMin = 0;
+	$defaultUSBAMax = 4;
+	if (!empty($_POST["usba_range"])){
+		$usba_arr = explode("-", $_POST["usba_range"]);
+	} else {
+		$usba_arr[0] = $defaultUSBAMin;
+		$usba_arr[1] = $defaultUSBAMax;
+	}
+	
+	//usbc filter 
+	$defaultUSBCMin = 0;
+	$defaultUSBCMax = 4;
+	if (!empty($_POST["usbc_range"])){
+		$usbc_arr = explode("-", $_POST["usbc_range"]);
+	} else {
+		$usbc_arr[0] = $defaultUSBCMin;
+		$usbc_arr[1] = $defaultUSBCMax;
+	}
+	
+	//battery filter 
+	$defaultBattMin = 30;
+	$defaultBattMax = 100;
+	if (!empty($_POST["battery_range"])){
+		$batt_arr = explode("-", $_POST["battery_range"]);
+	} else {
+		$batt_arr[0] = $defaultBattMin;
+		$batt_arr[1] = $defaultBattMax;
+	}
+	
+	//weight filter 
+	$defaultWeightMin = 1;
+	$defaultWeightMax = 6;
+	if (!empty($_POST["weight_range"])){
+		$weight_arr = explode("-", $_POST["weight_range"]);
+	} else {
+		$weight_arr[0] = $defaultWeightMin;
+		$weight_arr[1] = $defaultWeightMax;
+	}
+	
 	/* debugging purposes
 	echo $cpuseries;
 	echo $storage_arr;
@@ -109,7 +182,7 @@ function db_get_task_data1() {
 	*/
 	
 	//grab list
-	$query = "SELECT Laptop, `CPU Series`, CPU, Price FROM laptop_list
+	$query = "SELECT Laptop, `CPU Series`, CPU, Price, Link FROM laptop_list
 	WHERE Price BETWEEN $price_arr[0] AND $price_arr[1]
 	$cpuseries
 	$storage_arr
@@ -120,7 +193,17 @@ function db_get_task_data1() {
 	$manufacturer_arr
 	$touch_arr
 	$rj45_arr
-	;";
+	AND Size BETWEEN $display_arr[0] AND $display_arr[1]
+	$resolution_arr
+	$tb_arr
+	$sd_arr
+	AND `USB-A Slots` BETWEEN $usba_arr[0] AND $usba_arr[1]
+	AND `USB-C Slots` BETWEEN $usbc_arr[0] AND $usbc_arr[1]
+	AND `Battery Capacity` BETWEEN $batt_arr[0] AND $batt_arr[1]
+	AND Weight BETWEEN $weight_arr[0] AND $weight_arr[1]
+	$gpu_arr
+	ORDER BY Price
+	;";// ^ lowest to highest price
 	//echo $query; //debugging purposes
 	
 	//push result to create_task_table()
@@ -129,7 +212,7 @@ function db_get_task_data1() {
 	while ($row = mysqli_fetch_row($result)) {
 		$temp = array();
 		$cpu = "$row[1] $row[2]";
-		array_push($temp,$row[0],$cpu,$row[3]);
+		array_push($temp,$row[0],$cpu,number_format((float)$row[3], 2, '.', ''),$row[4]);
 		array_push($relation,$temp);
 	}
 	mysqli_close($conn);
@@ -137,4 +220,3 @@ function db_get_task_data1() {
 }
 
 ?>
-
