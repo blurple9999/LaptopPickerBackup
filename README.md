@@ -39,4 +39,5 @@ Our Website(LaptopPicker) can provide a list of all purchasable laptops across a
 
 - ![image](https://user-images.githubusercontent.com/84642696/207214046-4492932e-ba4e-48c3-ad01-44558cdb24a6.png)
 
-- Hack
+- ![image](https://user-images.githubusercontent.com/84642696/207214307-e0e873b1-c468-4d33-8fa4-d7051ba8da45.png)
+
