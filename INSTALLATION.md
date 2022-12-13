@@ -1,7 +1,7 @@
 # Installation
 
 ## Before we start
-Installation is not required, as this project is hosted online for free, fully featured, at http://laptoppicker4110.000webhostapp.com/.
+Installation is not required, as this project is hosted online for free, fully featured, at https://laptoppicker4110.000webhostapp.com/.
 If you would like to continue with installation, whether it be you would like to test something locally, or our site ever vanishes, you are free to do so.
 
 ## Prerequisites
